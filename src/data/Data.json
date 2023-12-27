@@ -1,0 +1,35 @@
+{
+    "Product": [
+      {
+        "id": 1,
+        "imagePath": "assets/ShopCategory/denim.png",
+        "category": "SHIRTS"
+      },
+      {
+        "id": 2,
+        "imagePath": "assets/ShopCategory/outerwear.png",
+        "category": "DENIM"
+      },
+      {
+        "id": 3,
+        "imagePath": "assets/ShopCategory/pants.png",
+        "category": "TEES"
+      },
+      {
+        "id": 4,
+        "imagePath": "assets/ShopCategory/shirts.png",
+        "category": "PANTS"
+      },
+      {
+        "id": 5,
+        "imagePath": "assets/ShopCategory/sweaters.png",
+        "category": "SWEATERS"
+      },
+      {
+        "id": 6,
+        "imagePath": "../../assets/ShopCategory/tees.png",
+        "category": "TEES"
+      }
+    ]
+  }
+  
