@@ -8,7 +8,7 @@ interface IProduct {
 }
 
 const CategorySection = () => {
-  const [data, setData] = useState<IProduct[]>(Product.Product);
+  const [data,] = useState<IProduct[]>(Product.Product);
 
   return (
     <div className="w-full h-96 px-10 py-24 flex-col justify-start items-center gap-6 inline-flex">
