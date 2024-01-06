@@ -1,35 +1,117 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import FavoritCarusel from "./components/CreateProductFavoritSection/FavoritCarusel";
 
-function App() {
-  const [count, setCount] = useState(0)
 
+const App = () => {
+  const slides = [
+    {
+      content: (
+        <div className=" flex flex-col items-center justify-center gap-2">
+          <img
+            className="w-72 h-96"
+            src="/public/FavoriteSection/image.png"
+            alt=""
+          />
+          <div className="w-60 text-neutral-800 text-xs font-normal font-['Maison Neue'] leading-none tracking-tight">
+            The Slim 4-Way Stretch Organic Jean | Uniform
+          </div>
+          <div className="w-72 h-4 text-neutral-500 text-xs font-normal font-['Maison Neue'] leading-none tracking-tight">
+            Toasted Coconut
+          </div>
+        </div>
+      ),
+    },
+    {
+      content: (
+        <div className=" flex flex-col items-center justify-center gap-2">
+          <img
+            className="w-72 h-96"
+            src="/public/FavoriteSection/image1.png"
+            alt=""
+          />
+         <div className="w-60 text-neutral-800 text-xs font-normal font-['Maison Neue'] leading-none tracking-tight">
+            The Slim 4-Way Stretch Organic Jean | Uniform
+          </div>
+          <div className="w-72 h-4 text-neutral-500 text-xs font-normal font-['Maison Neue'] leading-none tracking-tight">
+            Toasted Coconut
+          </div>
+        </div>
+      ),
+    },
+    {
+      content: (
+        <div className=" flex flex-col items-center justify-center gap-2">
+          <img
+            className="w-72 h-96"
+            src="/public/FavoriteSection/image2.png"
+            alt=""
+          />
+           <div className="w-60 text-neutral-800 text-xs font-normal font-['Maison Neue'] leading-none tracking-tight">
+            The Slim 4-Way Stretch Organic Jean | Uniform
+          </div>
+          <div className="w-72 h-4 text-neutral-500 text-xs font-normal font-['Maison Neue'] leading-none tracking-tight">
+            Toasted Coconut
+          </div>
+        </div>
+      ),
+    },
+    {
+      content: (
+        <div className=" flex flex-col items-center justify-center gap-2">
+          <img
+            className="w-72 h-96"
+            src="/public/FavoriteSection/image3.png"
+            alt=""
+          />
+          <div className="w-60 text-neutral-800 text-xs font-normal font-['Maison Neue'] leading-none tracking-tight">
+            The Slim 4-Way Stretch Organic Jean | Uniform
+          </div>
+          <div className="w-72 h-4 text-neutral-500 text-xs font-normal font-['Maison Neue'] leading-none tracking-tight">
+            Toasted Coconut
+          </div>
+        </div>
+      ),
+    },
+    {
+      content: (
+        <div className=" flex flex-col items-center justify-center gap-2">
+          <img
+            className="w-72 h-96"
+            src="/public/FavoriteSection/image4.png"
+            alt=""
+          />
+           <div className="w-60 text-neutral-800 text-xs font-normal font-['Maison Neue'] leading-none tracking-tight">
+            The Slim 4-Way Stretch Organic Jean | Uniform
+          </div>
+          <div className="w-72 h-4 text-neutral-500 text-xs font-normal font-['Maison Neue'] leading-none tracking-tight">
+            Toasted Coconut
+          </div>
+        </div>
+      ),
+    },
+    {
+      content: (
+        <div className=" flex flex-col items-center justify-center gap-2">
+          <img
+            className="w-72 h-96"
+            src="/public/FavoriteSection/image5.png"
+            alt=""
+          />
+           <div className="w-60 text-neutral-800 text-xs font-normal font-['Maison Neue'] leading-none tracking-tight">
+            The Slim 4-Way Stretch Organic Jean | Uniform
+          </div>
+          <div className="w-72 h-4 text-neutral-500 text-xs font-normal font-['Maison Neue'] leading-none tracking-tight">
+            Toasted Coconut
+          </div>
+        </div>
+      ),
+    },
+  ];
+  
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+    <div className="w-full">
+      <FavoritCarusel slides={slides} />
+    </div>
+  );
+};
 
-export default App
+export default App;

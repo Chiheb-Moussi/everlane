@@ -26,4 +26,3 @@ const EventsSection = () => {
   export default EventsSection;
   
 
-//   bg-cover style={{ backgroundImage: 'url(/EventsFoto/Frame1.png)' }}
