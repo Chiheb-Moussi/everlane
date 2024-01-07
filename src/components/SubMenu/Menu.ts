@@ -4,11 +4,13 @@ export enum LinkType {
 }
 export type Link = {
     name: string;
-    link: string
+    link: string;
+
 }
 export type Section = {
     title: string;
-    links: Link[];
+    image?: string;
+    links?: Link[];
     type?: LinkType;
 };
 

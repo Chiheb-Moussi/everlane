@@ -1,12 +1,12 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import SubMenu from './SubMenu';
+import MainMenu from './MainMenu';
 
 const meta = {
     title: 'componets/SubMenu',
-    component: SubMenu,
+    component: MainMenu,
 
-} satisfies Meta<typeof SubMenu>;
+} satisfies Meta<typeof MainMenu>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
