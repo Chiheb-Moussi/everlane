@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 import Cta from './Cta';
 
 const meta = {
-    title: 'componets/CTA-Section',
+    title: 'components/CTASection',
     component: Cta,
 
 } satisfies Meta<typeof Cta>;
