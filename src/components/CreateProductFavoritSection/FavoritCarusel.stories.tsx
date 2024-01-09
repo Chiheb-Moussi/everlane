@@ -1,6 +1,5 @@
 import { Meta, StoryObj } from "@storybook/react";
 import FavoritCarusel from "./FavoritCarusel";
-import { ReactNode } from "react";
 
 const meta = {
   title: "components/FavoritCarusel",

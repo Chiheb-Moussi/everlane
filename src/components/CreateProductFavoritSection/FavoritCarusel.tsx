@@ -39,12 +39,12 @@ const FavoritCarusel = ({ slides }: Props) => {
 
       <div className="overflow-hidden relative ">
         <div
-          className={`flex gap-4 justify-center px-10 ease-out duration-40 `}
+          className={`flex gap-4 justify-center px-10 ease-out duration-40 sm:gap-4 `}
           style={{ transform: `translateX(-${current * 100}%)` }}
         >
           {slides && slides.length > 0 ? (
             slides
-              .slice(caruselIndex, caruselIndex + (window.innerWidth < 768 ? 2 : 3)) 
+              .slice(caruselIndex, caruselIndex + (window.innerWidth < 768 ? 1 : 3)) 
               .map((s, index) => (
                 <div key={index} className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4">
                   {s.content}
