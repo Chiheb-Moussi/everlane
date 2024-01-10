@@ -6,9 +6,17 @@ export default {
   ],
   theme: {
     container:{
-      center:true
+      center:true,
+      padding: '42px',
+      screens: {
+        '2xl': '1400px',
+      },
     },
-    extend: {},
+    extend: {
+      spacing: {
+        '18.5': '4.625rem',
+      }
+    },
   },
   plugins: [],
 }
