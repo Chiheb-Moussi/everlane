@@ -1,10 +1,6 @@
 import { useState } from "react";
 import SlideItem from "./SlideItem";
-type Props = {
-  slides2: {
-    content: JSX.Element;
-  }[];
-};
+
 export interface Slide {
   id: string;
   title: string;
@@ -14,7 +10,7 @@ export interface Slide {
   linkUrl: string;
   image: string;
 }
-const FavoriteCarusel2 = ({ slides2 }: Props) => {
+const FavoriteCarusel2 = () => {
   const slides: Slide[] = [
     {
       id: '1',
