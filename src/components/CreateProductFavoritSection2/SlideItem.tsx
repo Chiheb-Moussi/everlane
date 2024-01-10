@@ -1,40 +1,31 @@
 import { Slide } from "./FavoriteCarusel2";
 
-const SlideItem = ({id, title, quote, user, linkName, linkUrl, image}: Slide) => {
+const SlideItem1 = ({
+    title,
+    quote,
+    user,
+    linkName,
+    linkUrl,
+    image,
+  }: Slide) => {
     return (
-        <div
-            className="w-full h-full sm:w-auto sm:h-auto"
-        >
-            <div className="container w-full flex flex-col lg:flex-row gap-20 lg:gap-2 justify-center items-center">
-                <div className="self-stretch text-black text-2xl lg:text-base font-normal font-['Maison Neue'] leading-normal tracking-wide lg:px-16">
-                    {title}
-                </div>
-                <div className="w-full lg:[50vw] lg:order-last">
-                    <img
-                        src={image}
-                        alt=""
-                        className=" w-full lg:[50vw] lg:h-[695px]"
-                    />
-                </div>
-                <div className="w-full lg:w-1/2 flex flex-col  gap-10 ">
-                    
-                    <div className="self-stretch h-32 flex-col justify-start items-start gap-3.5 flex">
-                        <div className="self-stretch text-black text-2xl font-normal font-['Maison Neue'] leading-loose">
-                            {quote}
-                        </div>
-                    </div>
-                    <div className="self-stretch">
-                        <span className="text-black text-sm font-normal font-['Maison Neue'] leading-none tracking-wider">
-                        -- {user},{" "}
-                        </span>
-                        <a href={linkUrl} className="text-black text-sm font-normal font-['Maison Neue'] underline leading-tight tracking-wider">
-                            {linkName}
-                        </a>
-                    </div>
-                </div>
-            </div>
+      <div className="md:flex md:justify-center md:items-center w-full md:gap-8">
+        <div className="md:flex md:flex-col md:gap-10">
+          <div className="order-1 md:order-1">
+            <p>{title}</p>
+          </div>
+          <div className="md:flex md:flex-col md:gap-4 order-2 md:order-3"> {/* Änderung der Reihenfolge */}
+            <p className="font-bold font-[Maison Neue] text-2xl">{quote}</p>
+            <span>
+              {user} <a className="underline" href={linkUrl}>{linkName}</a>
+            </span>
+          </div>
         </div>
-    )
-}
-
-export default SlideItem;
+        <div className="order-2 md:w-[50vw] md:order-2"> {/* Änderung der Reihenfolge */}
+          <img src={image} className="w-full h-96" alt="" />
+        </div>
+      </div>
+    );
+  };
+  
+  export default SlideItem1;
