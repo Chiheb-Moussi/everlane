@@ -1,4 +1,3 @@
-import { Rating } from "react-simple-star-rating";
 import './Testimonials.css'
 export interface Slide {
     id: string;
