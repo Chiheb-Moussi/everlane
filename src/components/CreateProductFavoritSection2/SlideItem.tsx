@@ -21,7 +21,7 @@ const SlideItem1 = ({
             </span>
           </div>
         </div>
-        <div className="order-2 md:w-[50vw] md:order-2"> {/* Änderung der Reihenfolge */}
+        <div className="order-2 md:w-[50vw] md:order-3"> {/* Änderung der Reihenfolge */}
           <img src={image} className="w-full h-96" alt="" />
         </div>
       </div>
