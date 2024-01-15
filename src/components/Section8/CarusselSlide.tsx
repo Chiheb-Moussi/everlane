@@ -53,7 +53,7 @@ const CarusselSlide = () => {
     const handleResize = () => {
       if (window.innerWidth < 640) {
         setCarosselLength(1);
-      } else if (window.innerWidth < 834) {
+      } else if (window.innerWidth < 768) {
         setCarosselLength(2);
       } else if (window.innerWidth < 1024) {
         setCarosselLength(3);
@@ -79,20 +79,22 @@ const CarusselSlide = () => {
         </p>
         <p className=" text-center">Add Your Photo</p>
       </div>
-      <div className=" ">
-        <div className="flex gap-[10px] display-slide-image items-center">
-          <button onClick={() => handleArrowClick(-1)}>
-            <img src="/favoriteImage/CaretLeft.svg" alt="" className="slide" />
+      <div className=" flex items-center justify-between gap-10 ">
+      <button onClick={() => handleArrowClick(-1)}  className="">
+            <img src="/favoriteImage/CaretLeft.svg" alt="" className="slide " />
           </button>
+        <div className="flex gap-[10px] items-center">
+         
           {displayImage
             .slice(carrosselPosition, carrosselPosition + carosselLength)
             .map((i) => (
               <img key={i.id} src={i.image} alt="" className={`h-[225px] `} />
             ))}
-          <button onClick={() => handleArrowClick(1)}>
-            <img src="/favoriteImage/CaretRight.svg" className="slide" />
-          </button>
+          
         </div>
+        <button onClick={() => handleArrowClick(1)}>
+            <img src="/favoriteImage/CaretRight.svg" className="slide " />
+          </button>
       </div>
     </div>
   );
