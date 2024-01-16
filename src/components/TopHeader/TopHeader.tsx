@@ -30,41 +30,36 @@ const TopHeader = () => {
       className="w-full h-7 px-7 py-1.5 justify-between items-center inline-flex"
       style={containerStyle}
     >
-      <div className="grow shrink basis-0 h-4 justify-center items-center gap-1 flex">
-        <div className="text-center text-white text-xs font-semibold font-maison-neue leading-none tracking-tight">
+      <div className="grow shrink basis-0 h-4 justify-between sm:justify-center items-center flex gap-4">
+        <div className="text-center  text-white text-xs font-semibold font-maison-neue leading-none tracking-tight">
           Get early access on launches and offers.
         </div>
-        <div className="text-center text-white text-xs font-normal font-maison-neue underline leading-none tracking-tight">
+        <div className="hidden sm:flex text-center text-white text-xs font-normal font-maison-neue underline leading-none tracking-tight">
           Sign Up For Texts
         </div>
-        <div className="w-3.5 h-3.5 relative" />
       </div>
       <div className="justify-start items-center gap-3 flex">
-        <div className="w-5 h-3.5 relative">
-          <div className="w-5 h-3.5 left-0 top-0 absolute"></div>
-        </div>
-        <div className="text-white text-xs font-normal font-maison-neue leading-none tracking-tight">
-          <select
-            name=""
-            id=""
-            className="bg-transparent border-none outline-none w-18 "
-          >
-            <option style={containerStyle} value="USD">
-              <div className="w-3.5 h-3.5 relative">
-              <ReactCountryFlag countryCode="US" />
-              </div>
-              <span className="ml-2">USD</span>
-            </option>
-
-            <option  style={containerStyle}  value="EUR">
-              <div className="w-3.5 h-3.5 relative text-2xl">
-                <ReactCountryFlag  countryCode="EU" />
-              </div>
-              <span className="ml-2">EUR</span>
-            </option>
-          </select>
-        </div>
+        <div className="w-5 h-3.5 left-0 top-0 absolute"></div>
       </div>
+      <select
+        id=""
+        className="w-[70px] text-xs font-normal font-maison-neue leading-none tracking-tight"
+      >
+        <option style={containerStyle} className=" w-full flex">
+       
+            <ReactCountryFlag countryCode="US" />
+            <div> &nbsp;&nbsp;&nbsp;</div>
+            <span className="">USD</span>
+         
+        </option>
+        <option style={containerStyle} className=" w-full flex">
+      
+          <ReactCountryFlag countryCode="EU" />
+            <div> &nbsp;&nbsp;&nbsp;</div>
+            <span className="">EUR</span>
+        
+        </option>
+      </select>
     </div>
   );
 };
