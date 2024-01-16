@@ -30,8 +30,8 @@ const TopHeader = () => {
       className="w-full h-7 px-7 py-1.5 justify-between items-center inline-flex"
       style={containerStyle}
     >
-      <div className="grow shrink basis-0 h-4 justify-between sm:justify-center items-center flex gap-4">
-        <div className="text-center  text-white text-xs font-semibold font-maison-neue leading-none tracking-tight">
+      <div className="grow shrink basis-0 h-4 justify-between sm:justify-center items-center flex">
+        <div className="sm:text-center  text-white text-xs font-semibold font-maison-neue leading-none tracking-tight pr-2">
           Get early access on launches and offers.
         </div>
         <div className="hidden sm:flex text-center text-white text-xs font-normal font-maison-neue underline leading-none tracking-tight">
