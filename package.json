@@ -23,7 +23,8 @@
     "tailwind-merge": "^2.2.0",
     "tw-elements-react": "^1.0.0-alpha2",
     "usehooks-ts": "^2.9.4",
-    "uuid": "^9.0.1"
+    "uuid": "^9.0.1",
+    "react-multi-carousel": "^2.8.4"
   },
   "devDependencies": {
     "@storybook/addon-essentials": "^7.6.7",
