@@ -1,0 +1,14 @@
+.bg-believe-image {
+    background-image: url('/believe/image.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    
+  }
+/*   
+  @media (min-width: 640px) {
+    .xl\:bg-cover {
+      background-size: contain;
+    }
+  } */

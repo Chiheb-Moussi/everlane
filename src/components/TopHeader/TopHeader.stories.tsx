@@ -1,14 +1,15 @@
-import type { Meta, StoryObj } from '@storybook/react';
+import { Meta, StoryObj } from "@storybook/react";
+import TopHeader from "./TopHeader";
 
-import TopHeader from './TopHeader';
- 
 const meta = {
-  title: 'componets/TopHeader',
-  component: TopHeader,
-  
-} satisfies Meta<typeof TopHeader>;
+    title:"components/TopHeader",
+    component:TopHeader
+}satisfies Meta<typeof TopHeader>
+export default meta
 
-export default meta;
-type Story = StoryObj<typeof meta>;
-
-export const Default: Story = {};
+type Story = StoryObj<typeof meta>
+export const Default: Story = {
+    args:{
+        
+    }
+};
