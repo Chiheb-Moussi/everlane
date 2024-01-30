@@ -1,6 +1,5 @@
 
 
-
 const HeroSection = () => {
     return (
         <div className="relative">
