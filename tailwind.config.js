@@ -19,4 +19,9 @@ export default {
     },
   },
   plugins: [],
+<<<<<<< HEAD
 }
+=======
+}
+
+>>>>>>> origin/EC-17

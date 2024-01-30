@@ -1,4 +1,5 @@
 import { useState } from "react";
+<<<<<<< HEAD
 import SlideItem1 from "./SlideItems1";
 
 export interface ISlide {
@@ -56,19 +57,37 @@ const FavoritCarusel = () => {
   ]
 
 
+=======
+
+type Props = {
+  slides: {
+    content: JSX.Element;
+  }[];
+};
+
+const FavoritCarusel = ({ slides }: Props) => {
+>>>>>>> origin/EC-17
   const [current] = useState(0);
   const [caruselIndex, setCaruselIndex] = useState(2);
 
   const handleCaruselIndex = (operand: string) => {
     if (operand === "+") {
+<<<<<<< HEAD
       if (caruselIndex === slides1.length - 1) {
+=======
+      if (caruselIndex === slides.length - 1) {
+>>>>>>> origin/EC-17
         setCaruselIndex(0);
       } else {
         setCaruselIndex(caruselIndex + 1);
       }
     } else if (operand === "-") {
       if (caruselIndex === 0) {
+<<<<<<< HEAD
         setCaruselIndex(slides1.length - 1);
+=======
+        setCaruselIndex(slides.length - 1);
+>>>>>>> origin/EC-17
       } else {
         setCaruselIndex(caruselIndex - 1);
       }
@@ -91,6 +110,7 @@ const FavoritCarusel = () => {
           className={`flex gap-4 justify-center px-10 ease-out duration-40 sm:gap-4 `}
           style={{ transform: `translateX(-${current * 100}%)` }}
         >
+<<<<<<< HEAD
           {slides1 && slides1.length > 0 ? (
             slides1
               .slice(
@@ -100,6 +120,14 @@ const FavoritCarusel = () => {
               .map((s, index) => (
                 <div key={index} className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4">
                   <SlideItem1 {...s}/>
+=======
+          {slides && slides.length > 0 ? (
+            slides
+              .slice(caruselIndex, caruselIndex + (window.innerWidth < 768 ? 1 : 3)) 
+              .map((s, index) => (
+                <div key={index} className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4">
+                  {s.content}
+>>>>>>> origin/EC-17
                 </div>
               ))
           ) : (
