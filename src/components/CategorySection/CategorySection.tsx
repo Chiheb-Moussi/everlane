@@ -1,11 +1,8 @@
 import { useState } from "react";
 import Product from "../../data/Data.json";
+import { IProduct } from "../../models/interface";
 
-interface IProduct {
-  id: number;
-  imagePath: string;
-  category: string;
-}
+
 
 const CategorySection = () => {
   const [data,] = useState<IProduct[]>(Product.Product);

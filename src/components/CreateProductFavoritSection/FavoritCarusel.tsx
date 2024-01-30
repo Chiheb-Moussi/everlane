@@ -1,25 +1,74 @@
 import { useState } from "react";
+import SlideItem1 from "./SlideItems1";
 
-type Props = {
-  slides: {
-    content: JSX.Element;
-  }[];
-};
+export interface ISlide {
+  id: string;
+  title: string;
+  price: string;
+  linkName: string;
+  image: string;
+}
 
-const FavoritCarusel = ({ slides }: Props) => {
+const FavoritCarusel = () => {
+   const slides1: ISlide[] = [
+    {
+      id: '1',
+      title: 'People are talking',
+      price: "60$",
+      linkName: "khalil",
+      image: "/FavoriteSection/image.png"
+    },
+    {
+      id: '2',
+      title: 'People are talking',
+      price: "200$",
+      linkName: "Bonne",
+      image: "/FavoriteSection/image1.png"
+    },
+    {
+      id: '3',
+      title: 'People are talking',
+      price: "100$",
+      linkName: "Guhlam",
+      image: "/FavoriteSection/image2.png"
+    },
+    {
+      id: '4',
+      title: 'People are talking',
+      price: "100$",
+      linkName: "Guhlam",
+      image: "/FavoriteSection/image3.png"
+    },
+    {
+      id: '5',
+      title: 'People are talking',
+      price: "100$",
+      linkName: "Guhlam",
+      image: "/FavoriteSection/image4.png"
+    },
+    {
+      id: '6',
+      title: 'People are talking',
+      price: "100$",
+      linkName: "Guhlam",
+      image: "/FavoriteSection/image5.png"
+    },
+  ]
+
+
   const [current] = useState(0);
   const [caruselIndex, setCaruselIndex] = useState(2);
 
   const handleCaruselIndex = (operand: string) => {
     if (operand === "+") {
-      if (caruselIndex === slides.length - 1) {
+      if (caruselIndex === slides1.length - 1) {
         setCaruselIndex(0);
       } else {
         setCaruselIndex(caruselIndex + 1);
       }
     } else if (operand === "-") {
       if (caruselIndex === 0) {
-        setCaruselIndex(slides.length - 1);
+        setCaruselIndex(slides1.length - 1);
       } else {
         setCaruselIndex(caruselIndex - 1);
       }
@@ -42,12 +91,15 @@ const FavoritCarusel = ({ slides }: Props) => {
           className={`flex gap-4 justify-center px-10 ease-out duration-40 sm:gap-4 `}
           style={{ transform: `translateX(-${current * 100}%)` }}
         >
-          {slides && slides.length > 0 ? (
-            slides
-              .slice(caruselIndex, caruselIndex + (window.innerWidth < 768 ? 1 : 3)) 
+          {slides1 && slides1.length > 0 ? (
+            slides1
+              .slice(
+                caruselIndex,
+                caruselIndex + (window.innerWidth < 768 ? 1 : 3)
+              )
               .map((s, index) => (
                 <div key={index} className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4">
-                  {s.content}
+                  <SlideItem1 {...s}/>
                 </div>
               ))
           ) : (

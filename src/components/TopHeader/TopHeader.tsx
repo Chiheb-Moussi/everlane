@@ -8,7 +8,6 @@ const TopHeader = () => {
     const colors = ["red", "blue", "green", "yellow"];
     const randomIndex = Math.floor(Math.random() * colors.length);
     const randomColor = colors[randomIndex];
-    console.log("Random Color:", randomColor);
     return randomColor;
   };
 

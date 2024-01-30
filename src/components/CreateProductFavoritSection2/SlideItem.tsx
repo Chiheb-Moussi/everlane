@@ -1,6 +1,6 @@
 import { Slide } from "./FavoriteCarusel2";
 
-const SlideItem1 = ({
+const SlideItem = ({
     title,
     quote,
     user,
@@ -28,4 +28,4 @@ const SlideItem1 = ({
     );
   };
   
-  export default SlideItem1;
+  export default SlideItem;

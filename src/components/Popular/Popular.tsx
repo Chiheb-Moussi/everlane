@@ -1,8 +1,5 @@
-export interface IImage {
-  id: string;
-  image: string;
-  title: string;
-}
+import { IImage } from "../../models/interface";
+
 const PopularImage: IImage[] = [
   {
     id: "1",
