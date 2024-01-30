@@ -3,8 +3,8 @@
 const HeroSection = () => {
     return (
         <div className="relative">
-            <div className="bg-cover bg-center h-screen flex items-center justify-center relative">
-                <img src="./images/Hero-sectionEC4.png" alt="Hero Section Background" />
+            <div className="bg-cover bg-center h-full flex items-center justify-center relative">
+                <img src="/images/Hero-sectionEC4.png" alt="Hero Section Background" />
                 <div className="absolute left-1/3 transform -translate-x-2/3 text-center text-white">
                     <div className="text-5xl font-normal leading-normal tracking-tight mb-4">
                         Happy New Gear
