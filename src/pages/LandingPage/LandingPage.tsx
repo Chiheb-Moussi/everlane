@@ -4,6 +4,7 @@ import HeroSection from "../../components/HeroSectionEc4/HeroSection.tsx";
 import CategorySection from "../../components/CategorySection/CategorySection.tsx";
 import EventsSection from "../../components/CreateEventSection/EventsSection.tsx";
 import Cta from "../../components/CTASection/Cta.tsx";
+import Cta from "../../components/CTASection/Cta.tsx";
 import ProductFavourites from "../../components/ProductFavourites/ProductFavourites.tsx";
 import Testimonials from "../../components/Testimonials/Testimonials.tsx";
 
@@ -14,6 +15,7 @@ const LandingPage = () => {
         <HeroSection />
         <CategorySection />
         <EventsSection />
+        <Cta/>
         <Cta />
         <ProductFavourites />
         <Testimonials />
