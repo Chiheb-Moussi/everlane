@@ -47,8 +47,8 @@ const Testimonials = () => {
         }
     ]
     return (
-        <div className="container">
-            <div className="px-[17px] ">
+        <div className="px-2">
+            <div className="sm:px-[17px] ">
                 <Slider items={items} numberItemsDesktop={1} numberItemsTablet={1} numberItemsMobile={1} />
             </div>
             
