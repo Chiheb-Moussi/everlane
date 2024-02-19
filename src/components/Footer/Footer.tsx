@@ -5,7 +5,7 @@ const Footer = () => {
 
 
     return (
-        <footer className="bg-neutral-50 text-left lg:text-left">
+        <footer className="bg-neutral-50 text-left px-10 py-10  lg:text-left">
             <div className="flex flex-col md:flex-row gap-4 md:gap-0 md:mr-4 w-full md:w-auto">
                 <FooterAccordion title="Account"/>
                 <FooterAccordion title="Company"/>
@@ -13,12 +13,12 @@ const Footer = () => {
                 <FooterAccordion title="Connect"/>
 
                 <div className="flex-grow min-w-[300px] md:flex-shrink-0">
-                    <p className="font-bold text-neutral-700 w-full">
+                    <p className="font-bold text-neutral-900 w-full">
                         Sign up to receive 10% off your first order.
                     </p>
                     <label>
                         <input
-                            className="mt-1 p-2 w-full"
+                            className="my-10 p-2 w-full"
                             type="email"
                             placeholder="Email Address"
                         />

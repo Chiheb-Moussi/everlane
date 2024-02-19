@@ -18,45 +18,45 @@ const FooterAccordion: React.FC<FooterAccordionProps> = ({ title }) => {
        }
     },[width])
     return (
-        <div className="w-full md:w-[220px] flex-shrink-1 border-b border-neutral-700 md:border-none">
+        <div className="w-full md:w-[220px] flex-shrink-1 border-b border-neutral-900  md:border-none">
             <AccordionSection title={title} open={open} onToggle={() => setOpen(!open)}>
-                <ul className={twMerge("mb-0 list-none md:block ")}>
+                <ul className={twMerge("my-8 list-none md:block ")}>
 
                     {title === 'Account' && (
                         <>
                             <li>
-                                <a className="text-neutral-500">Log In</a>
+                                <a className="text-neutral-500 font-normal  ">Log In</a>
                             </li>
                             <li>
-                                <a className="text-neutral-500">Sign Up</a>
+                                <a className="text-neutral-500 font-normal">Sign Up</a>
                             </li>
                             <li>
-                                <a className="text-neutral-500">Redeem a Gift Card</a>
+                                <a className="text-neutral-500 font-normal">Redeem a Gift Card</a>
                             </li>
                         </>
                     )}
                     {title === 'Company' && (
                         <>
                             <li>
-                                <a className="text-neutral-500">About</a>
+                                <a className="text-neutral-500 font-normal">About</a>
                             </li>
                             <li>
-                                <a className="text-neutral-500">Environmental Initiatives</a>
+                                <a className="text-neutral-500 font-normal">Environmental Initiatives</a>
                             </li>
                             <li>
-                                <a className="text-neutral-500">Factories</a>
+                                <a className="text-neutral-500 font-normal">Factories</a>
                             </li>
                             <li>
-                                <a className="text-neutral-500">DEI</a>
+                                <a className="text-neutral-500 font-normal">DEI</a>
                             </li>
                             <li>
-                                <a className="text-neutral-500">Careers</a>
+                                <a className="text-neutral-500 font-normal">Careers</a>
                             </li>
                             <li>
-                                <a className="text-neutral-500">International</a>
+                                <a className="text-neutral-500 font-normal">International</a>
                             </li>
                             <li>
-                                <a className="text-neutral-500">Accessibility</a>
+                                <a className="text-neutral-500 font-normal">Accessibility</a>
                             </li>
 
                         </>
@@ -64,16 +64,16 @@ const FooterAccordion: React.FC<FooterAccordionProps> = ({ title }) => {
                     {title === 'Get Help' && (
                         <>
                             <li>
-                                <a className="text-neutral-500">Help Center</a>
+                                <a className="text-neutral-500 font-normal">Help Center</a>
                             </li>
                             <li>
-                                <a className="text-neutral-500">Return Policy</a>
+                                <a className="text-neutral-500 font-normal">Return Policy</a>
                             </li>
                             <li>
-                                <a className="text-neutral-500">Shipping Info</a>
+                                <a className="text-neutral-500 font-normal">Shipping Info</a>
                             </li>
                             <li>
-                                <a className="text-neutral-500">Bulk Orders</a>
+                                <a className="text-neutral-500 font-normal">Bulk Orders</a>
                             </li>
 
                         </>
@@ -81,19 +81,19 @@ const FooterAccordion: React.FC<FooterAccordionProps> = ({ title }) => {
                     {title === 'Connect' && (
                         <>
                             <li>
-                                <a className="text-neutral-500">Facebook</a>
+                                <a className="text-neutral-500 font-normal">Facebook</a>
                             </li>
                             <li>
-                                <a className="text-neutral-500">Instagram</a>
+                                <a className="text-neutral-500 font-normal">Instagram</a>
                             </li>
                             <li>
-                                <a className="text-neutral-500">Twitter</a>
+                                <a className="text-neutral-500 font-normal">Twitter</a>
                             </li>
                             <li>
-                                <a className="text-neutral-500">Affiliates</a>
+                                <a className="text-neutral-500 font-normal">Affiliates</a>
                             </li>
                             <li>
-                                <a className="text-neutral-500">Our Stores</a>
+                                <a className="text-neutral-500 font-normal">Our Stores</a>
                             </li>
 
                         </>

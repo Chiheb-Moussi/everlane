@@ -9,7 +9,7 @@ const SlideItem1 = ({
     return (
    
           <div className="grow shrink basis-0 flex-col justify-start items-center gap-1.5 inline-flex">
-            <img className="self-stretch h-96" src={image} />
+            <img className="object-cover self-stretch h-96" src={image} />
             <div className="self-stretch h-9 flex-col justify-start items-start gap-0.5 flex">
               <div className="self-stretch justify-start items-start gap-3 inline-flex">
                 <div className="grow shrink basis-0 text-neutral-800 text-xs font-normal font-['Maison Neue'] leading-none tracking-tight">{title}</div>

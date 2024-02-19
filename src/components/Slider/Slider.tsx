@@ -22,7 +22,8 @@ const Slider = ({items, numberItemsDesktop=5, numberItemsTablet=2, numberItemsMo
     const responsive = {
         desktop: {
             breakpoint: {max: 3000, min: 1024},
-            items: numberItemsDesktop
+            items: numberItemsDesktop,
+            className: 'object-cover'
         },
         tablet: {
             breakpoint: {max: 1024, min: 464},
@@ -38,7 +39,7 @@ const Slider = ({items, numberItemsDesktop=5, numberItemsTablet=2, numberItemsMo
         <Carousel
             responsive={responsive}
             renderButtonGroupOutside
-            className="container relative pb-10"
+            className=" relative pb-10"
             arrows={true}
             draggable={true}
             showDots

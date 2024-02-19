@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from "@storybook/react";
-import serviceSection from "./serviceSection";
+import serviceSection from "./ServiceSection.tsx";
 
 const meta = {
   title: "components/serviceSection",

@@ -2,7 +2,7 @@
 
 const HeroSection = () => {
     return (
-        <div className="relative">
+        <div className="relative my-5">
 
             <img
                 src="./images/Hero-sectionEC4.png"

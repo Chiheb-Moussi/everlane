@@ -68,18 +68,18 @@ const CarusselSlide = () => {
     };
   }, []);
   return (
-    <div className=" container flex flex-col items-center justify-center">
-   <div className=" px-[54px] pt-[90px]">
-        <p className="text-center mb-[25px] font-maison-neue text-2xl  font-light leading-10">
+    <div className="  flex flex-col items-center justify-center  ">
+   <div className=" ">
+        <p className="text-center py-5 font-maison-neue text-2xl  font-light leading-10">
           Everlane On You
         </p>
-        <p className="mb-[25px] font-maison-neue sm:text-base sm:font-normal leading-7 tracking-wider text-sm-center ">
+        <p className="py-1 font-maison-neue sm:text-base sm:font-normal leading-7 tracking-wider text-sm-center ">
           Share your latest look with #EverlaneOnYou for a chance to be
           featured.
         </p>
-        <p className=" text-center">Add Your Photo</p>
+        <p className=" text-center underline py-3 ">Add Your Photo</p>
       </div>
-      <div className=" flex items-center justify-between gap-10 ">
+      <div className=" flex items-center justify-between  ">
       <button onClick={() => handleArrowClick(-1)}  className="">
             <img src="/favoriteImage/CaretLeft.svg" alt="" className="slide " />
           </button>

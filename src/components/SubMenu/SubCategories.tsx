@@ -9,9 +9,9 @@ interface SubCategoriesProps {
 const SubCategories = ({data}: SubCategoriesProps) => {
     const [section, setSection] = useState<Section[]>([]);
     return <>
-        <div className="flex">
+        <div className="flex py-5 justify-center items-center gap-2.5 font-normal ">
             {data.map(item => (<button key={item.name} onMouseEnter={() => setSection(item.section ?? [])}
-                                       className="hover:text-black text-neutral-500 py-5 px-4"
+                                       className="hover:text-black text-neutral-500 font-normal"
             > {item.name} </button>))}
 
         </div>

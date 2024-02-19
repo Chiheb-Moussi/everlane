@@ -6,6 +6,10 @@ import EventsSection from "../../components/CreateEventSection/EventsSection.tsx
 import Cta from "../../components/CTASection/Cta.tsx";
 import ProductFavourites from "../../components/ProductFavourites/ProductFavourites.tsx";
 import Testimonials from "../../components/Testimonials/Testimonials.tsx";
+import Footer from "../../components/Footer/Footer.tsx";
+import CarusselSlide from "../../components/LandingSection8/CarusselSlide.tsx";
+import ServiceSection from "../../components/ServiceSection/ServiceSection.tsx";
+
 
 const LandingPage = () => {
     return <>
@@ -17,6 +21,9 @@ const LandingPage = () => {
         <Cta/>
         <ProductFavourites />
         <Testimonials />
+        <CarusselSlide/>
+        <ServiceSection/>
+        <Footer/>
     </>
 }
 

@@ -68,7 +68,7 @@ const ProductFavourites = () => {
         },
     ]
     return (
-        <div className="pb-20">
+        <div className="pb-10">
             <div className="flex flex-col gap-8">
                 <div
                     className="text-center text-black text-2xl font-normal font-['Maison Neue'] leading-loose">Everlane

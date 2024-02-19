@@ -7,7 +7,7 @@ interface ProductFavouriteItem {
 const ProductFavouriteItem = ({price,image,title,description}: ProductFavouriteItem) => {
     return (
         <div className="w-full px-2 flex-col justify-start items-center gap-1.5 inline-flex">
-            <img className="self-stretch h-96" src={image} alt="product image"/>
+            <img className="object-cover self-stretch h-96" src={image} alt="product image"/>
             <div className="self-stretch h-10 flex-col justify-start items-start gap-0.5 flex">
                 <div className="self-stretch justify-start items-start gap-3 inline-flex">
                     <div
