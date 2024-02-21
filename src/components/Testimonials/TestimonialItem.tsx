@@ -33,7 +33,7 @@ const TestimonialItem = ({ title, quote, user, linkName, linkUrl, image }: Testi
                 </div>
             </div>
             <div className="w-full">
-                <img src={image} className="w-full lg:h-[695px]" />
+                <img src={image} className="w-full lg:h-[400px]" />
                 <div className="w-full">
                     {user}, <a href={linkUrl}>{linkName}</a>
                 </div>

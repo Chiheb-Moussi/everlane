@@ -15,8 +15,8 @@ const CategorySection = () => {
       </div>
       <div className="sm:flex sm:flex-wrap sm:gap-2 ">
         {data.map((product) => (
-          <div key={product.id} className="grow shrink basis-0 flex flex-col justify-start items-center gap-3 ">
-            <img className="w-52 h-64" src={product.imagePath} />
+          <div key={product.id} className="grow shrink basis-0 flex flex-col justify-start items-center gap-3 bg-cover">
+            <img className="w-full h-auto " src={product.imagePath} />
             <div className="self-stretch text-center text-neutral-800 text-sm font-normal font-['Maison Neue'] underline leading-tight tracking-wider">
               {product.category}
             </div>
